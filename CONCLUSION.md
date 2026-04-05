@@ -1,10 +1,18 @@
 # Verification: KokkosFloat4 vs CUDA float4
 
 ## Test Environment
+- Machine: RIKEN H100
 - GPU: NVIDIA H100
 - CUDA: 12.6
 - Arch: sm_90
 - Optimization: -O3
+
+## How to Reproduce
+```bash
+export PATH=/usr/local/cuda-12.6/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH
+bash run_verify.sh
+```
 
 ## Results
 
